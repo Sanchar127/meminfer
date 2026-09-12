@@ -1,0 +1,297 @@
+# ============================================================
+# MemInfer - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Build directories
+# ------------------------------------------------------------
+
+build/
+build-*/
+cmake-build-*/
+out/
+dist/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# CMake user/local configuration
+CMakeUserPresets.json
+
+
+# ------------------------------------------------------------
+# Compiled binaries and objects
+# ------------------------------------------------------------
+
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.bin
+
+# CUDA compilation artifacts
+*.cubin
+*.fatbin
+*.ptx
+*.sass
+*.nvcc
+*.cudafe*
+*.dlink*
+
+
+# ------------------------------------------------------------
+# Testing
+# ------------------------------------------------------------
+
+Testing/
+test-results/
+test-output/
+coverage/
+coverage.xml
+coverage.html
+*.gcda
+*.gcno
+*.gcov
+
+
+# ------------------------------------------------------------
+# Benchmarks / profiling
+# ------------------------------------------------------------
+
+benchmark-results/
+benchmark-output/
+benchmarks/results/
+benchmarks/output/
+
+*.prof
+*.profile
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.sqlite3
+*.csv
+
+# Keep benchmark source/configuration files
+!benchmarks/**/*.cpp
+!benchmarks/**/*.cu
+!benchmarks/**/*.h
+!benchmarks/**/*.hpp
+!benchmarks/**/*.json
+!benchmarks/**/*.yaml
+!benchmarks/**/*.yml
+
+
+# ------------------------------------------------------------
+# Runtime data
+# ------------------------------------------------------------
+
+data/
+runtime-data/
+tmp/
+temp/
+cache/
+logs/
+
+*.log
+*.pid
+*.lock
+*.sock
+
+# Model/runtime generated files
+models/
+checkpoints/
+weights/
+snapshots/
+
+# Large model/data artifacts
+*.safetensors
+*.gguf
+*.ggml
+*.onnx
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+.pyre/
+.pytype/
+
+
+# ------------------------------------------------------------
+# Jupyter
+# ------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# IDEs / editors
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Qt Creator
+*.pro.user
+
+
+# ------------------------------------------------------------
+# OS generated files
+# ------------------------------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+
+
+# ------------------------------------------------------------
+# Environment / secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+secrets/
+credentials/
+
+
+# ------------------------------------------------------------
+# Documentation generated output
+# ------------------------------------------------------------
+
+docs/_build/
+docs/build/
+site/
+
+
+# ------------------------------------------------------------
+# Package manager / temporary files
+# ------------------------------------------------------------
+
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.tmp
+*.temp
+*.bak
+
+
+# ------------------------------------------------------------
+# CUDA / NVIDIA generated files
+# ------------------------------------------------------------
+
+.nv/
+.cuda/
+cuda-cache/
+
+# CUDA profiler temporary files
+*.nvprof
+*.nsys-rep
+*.nsys.sqlite
+
+
+# ------------------------------------------------------------
+# Local development configuration
+# ------------------------------------------------------------
+
+.local/
+.local.*
+*.local
+
+# Machine-specific CMake configuration
+CMakePresets.local.json
+
+
+# ------------------------------------------------------------
+# Generated documentation / reports
+# ------------------------------------------------------------
+
+reports/
+reports/*.html
+reports/*.json
+reports/*.csv
+
+
+# ------------------------------------------------------------
+# Large experiment artifacts
+# ------------------------------------------------------------
+
+experiments/
+results/
+
+# Keep directory structure if needed
+!experiments/.gitkeep
+!results/.gitkeep
+
+
+# ------------------------------------------------------------
+# Miscellaneous
+# ------------------------------------------------------------
+
+*.orig
+*.rej
+*.patch~
+core
+core.*
